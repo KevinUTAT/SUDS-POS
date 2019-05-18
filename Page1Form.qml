@@ -87,6 +87,12 @@ Page {
             height: 152
             text: qsTr("")
             spacing: 2
+            onClicked:
+            {
+                kegcount.value = kegcount.value + 1
+                backend.setKeg(kegcount.value)
+                total_display.text = qsTr("$ " + backend.getTotal().toFixed(2).toString())
+            }
         }
 
         Button {
@@ -96,6 +102,12 @@ Page {
             width: 80
             height: 152
             text: qsTr("")
+            onClicked:
+            {
+                domcount.value = domcount.value + 1
+                backend.setDom(domcount.value)
+                total_display.text = qsTr("$ " + backend.getTotal().toFixed(2).toString())
+            }
         }
 
         Button {
