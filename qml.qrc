@@ -5,5 +5,9 @@
         <file>Page2Form.ui.qml</file>
         <file>main.qml</file>
         <file>qtquickcontrols2.conf</file>
+        <file>resource/kegticket.jpg</file>
+        <file>resource/domesticticket.jpg</file>
+        <file>resource/importticket.jpg</file>
+        <file>resource/premiumticket.jpg</file>
     </qresource>
 </RCC>
