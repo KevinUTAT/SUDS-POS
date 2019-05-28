@@ -1,18 +1,14 @@
 import QtQuick 2.10
 import QtQuick.Controls 2.3
+import QtWebEngine 1.6
 
 Page {
-    width: 600
-    height: 400
+    width: 800
+    height: 480
 
-    header: Label {
-        text: qsTr("Page 2")
-        font.pixelSize: Qt.application.font.pixelSize * 2
-        padding: 10
+    WebEngineView {
+        anchors.fill: parent
+        url: "https://youtube.com"
     }
 
-    Label {
-        text: qsTr("You are on Page 2.")
-        anchors.centerIn: parent
-    }
 }
